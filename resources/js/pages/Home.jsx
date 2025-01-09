@@ -2,6 +2,7 @@ import React from 'react';
 import { usePage } from '@inertiajs/react';
 import { Link } from '@inertiajs/react';
 
+import Hero from './Hero';
 const Home= ()=> {
     const { menu } = usePage().props;
 
@@ -14,7 +15,10 @@ const Home= ()=> {
     };
 
     return (
+
+
         <div style={{ padding: '2rem', fontFamily: 'Arial, sans-serif' }}>
+                    <Hero/>
              <Link href="/qrcode" className="gap btn px-0 ml-2 pt-3" style={{ border: 'none' }}>
                     QRcode
             </Link>

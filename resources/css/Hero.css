@@ -1,0 +1,74 @@
+/* Hero Section Styling */
+body{
+
+    
+}
+.hero-section {
+   
+    background-image: url('/public/lemon.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: -webkit-fill-available; /* Pour Safari */
+    height: 100vh; /* Fallback pour les autres navigateurs */
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+
+/* Autres ajustements pour le contenu */
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff; /* Contraste pour être visible sur les images */
+    text-align: center;
+}
+
+.restaurant-name {
+    color: #e63946;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #fff; /* Contraste pour être visible sur les images */
+    text-align: center;
+}
+
+.hero-image-container {
+    text-align: center;
+}
+
+.hero-dish {
+    max-width: 100%;
+    border-radius: 10px;
+    animation: bounce 3s infinite ease-in-out;
+}
+
+.btn-primary {
+    background-color: #e63946;
+    border-color: #e63946;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section{
+        height: -webkit-fill-available;
+    }
+    .hero-title {
+        font-size: 2rem;
+        
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+}
